@@ -1,0 +1,63 @@
+html{
+    font-size:16px;
+}
+body{
+    background-image: url('bg1.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    widows: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    font-size:4rem;
+    font-family: cursive;
+    text-align: center;
+    text-shadow: 5px 3px 3.5px black;
+    color:greenyellow;
+}
+h2{
+    font-size:2rem;
+    font-family: cursive;
+    text-align: center;
+    color:rgb(88, 12, 44);
+}
+.buttons{
+    width:100vw;
+    text-align: center;
+}
+.play{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    outline: none;
+    padding:5px 10px;
+    color:black;
+    background-color: rgba(255, 0, 0, 0.883);
+    font-size:2rem;
+    border-width: 10px;
+    border-color:rgb(255, 33, 3);
+    border-radius: 30px;
+}
+.play:hover{
+    box-shadow: 6px 8px 5px black;
+    font-size: 1.98rem;
+}
+.avatar{
+    background-image: url(avatar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    height:400px;
+    position: absolute;
+    top:305px;
+}
+.enemy{
+    background-image: url(dragon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height:300px;
+    position: absolute;
+    top:370px;
+    left:800px;
+}

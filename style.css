@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width:100vw;
+    height:100vh;    
+}
+.avatar{
+    background-image: url(avatar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 233px;
+    height:170px;
+    position: absolute;
+    bottom: 0;
+    left:50px;
+}
+.obstacle{
+    width:250px;
+    height:170px;
+    background-image: url(dragon.png);
+    background-size: cover;
+    position: absolute;
+    bottom:-10px;
+    left:700px;
+}
+.avatarJump{
+    animation: jump 0.6s linear;
+}
+.avatarDied{
+    animation: died 2s linear;
+}
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+.gameOver{
+    position: relative;
+    top:63px;
+    color:rgb(136, 17, 9);
+    font-size:6rem;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 700;
+}
+.reload{
+    position: relative;
+    top:63px;
+    color:rgb(131, 20, 66);
+    font-size:3rem;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 700;
+}
+#scoreCount{
+    position: absolute;
+    top:20px;
+    right:23px;
+    float: right;
+    border: 8px solid black;
+    background-color:rgb(7, 187, 61);
+    padding:10px;
+    width: fit-content;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5rem;
+}
+a{
+    position: absolute;
+    top:20px;
+    left:10px;
+}
+
+
+@keyframes jump{
+    0%{
+        bottom:0;
+    }
+    50%{
+        bottom:450px;
+    }
+    100%{
+        bottom:0;
+    }
+}
+
+@keyframes died{
+    0%{
+        bottom:0;
+    }
+    100%{
+        bottom:1000px;
+    }
+}
+
+@keyframes obstacleAni{
+    0%{
+        left:100vw;
+    }
+    100%{
+        left:-10vw;
+    }
+}
